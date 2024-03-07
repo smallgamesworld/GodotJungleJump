@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://du10ru4u1f633"]
+
+[ext_resource type="PackedScene" uid="uid://ceinpqrxaowa2" path="res://levels/level_base.tscn" id="1_kobf2"]
+[ext_resource type="TileSet" uid="uid://dhxw3f8l2saqn" path="res://assets/tilesets/tiles_world.tres" id="2_42o5h"]
+
+[node name="Level02" instance=ExtResource("1_kobf2")]
+
+[node name="SpawnPoint" parent="." index="4"]
+position = Vector2(22, 26)
+
+[node name="World" type="TileMap" parent="." index="6"]
+tile_set = ExtResource("2_42o5h")
+format = 2
+layer_0/tile_data = PackedInt32Array(589824, 1441792, 1, 655362, 1441792, 1, 720900, 1441792, 1, 786438, 1441792, 1, 655360, 720896, 13, 655361, 720896, 13, 720898, 720896, 13, 720899, 720896, 13, 786436, 720896, 13, 786437, 720896, 13, 851974, 720896, 13, 851975, 720896, 13, 786440, 196608, 1, 786441, 196608, 1, 786442, 196608, 1, 786443, 196608, 1, 786444, 196608, 1, 786445, 196608, 1, 786446, 196608, 1, 786447, 196608, 1, 786448, 196608, 1, 786449, 196608, 1, 786450, 196608, 1)
